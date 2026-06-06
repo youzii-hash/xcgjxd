@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: transparent;
+      font-family: Arial, sans-serif;
+    }
+    #stage {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(117, 204, 239, .20), transparent 34%),
+        linear-gradient(180deg, #f8fdff 0%, #eef9ff 100%);
+    }
+    ruffle-player {
+      width: 100%;
+      height: 100%;
+    }
+    #status {
+      position: fixed;
+      left: 10px;
+      bottom: 8px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .72);
+      color: #4f7b92;
+      font-size: 11px;
+      font-weight: 700;
+      pointer-events: none;
+      opacity: .72;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="stage"></div>
+  <div id="status">loading</div>
+  <script src="ruffle/ruffle.js"></script>
+  <script>
+    const query = new URLSearchParams(location.search);
+    const petId = '__PET_ID__'.startsWith('__') ? (query.get('petId') || '3740') : '__PET_ID__';
+    const action = '__ACTION__'.startsWith('__') ? (query.get('action') || 'idle') : '__ACTION__';
+    const status = document.getElementById('status');
+    const swfUrl = action === 'idle'
+      ? `https://seer.61.com/resource/groupFightResource/pet/${petId}.swf`
+      : `https://seer.61.com/resource/fightResource/pet/swf/${petId}.swf`;
+
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+      autoplay: 'on',
+      unmuteOverlay: 'hidden',
+      splashScreen: false,
+      warnOnUnsupportedContent: false,
+      showSwfDownload: false,
+      allowScriptAccess: true,
+      parameters: {
+        swf: swfUrl,
+        action
+      }
+    };
+
+    window.__petShellLoaded = (loadedAction) => {
+      status.textContent = loadedAction || action;
+    };
+    window.__petShellError = (message) => {
+      status.textContent = 'load failed';
+      console.error(message);
+    };
+
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+    player.style.width = '100%';
+    player.style.height = '100%';
+    document.getElementById('stage').appendChild(player);
+
+    const shell = new URL('pet_animation_shell.swf', location.href);
+    shell.searchParams.set('swf', swfUrl);
+    shell.searchParams.set('action', action);
+    shell.searchParams.set('t', Date.now().toString());
+    player.load(shell.toString());
+  </script>
+</body>
+</html>

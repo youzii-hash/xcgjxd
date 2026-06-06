@@ -1,0 +1,44 @@
+{
+  "name": "xiaocang-pet-player-runtime",
+  "version": 1,
+  "updatedAt": "2026-06-06",
+  "entry": "player.html",
+  "totalSize": 27523639,
+  "files": [
+    {
+      "path": "pet_animation_shell.swf",
+      "size": 2724,
+      "sha256": "abb503dc1a1a8e076a0449c9e8cbba36d3c5bebc80fc9ecdcfada14da9c3f0ff"
+    },
+    {
+      "path": "player.html",
+      "size": 2607,
+      "sha256": "330d4b49b04d9968ce9d90357721e088401565902d6bc47639ab7111fabd914d"
+    },
+    {
+      "path": "ruffle/bae0d5b86e41210ba443.wasm",
+      "size": 13872777,
+      "sha256": "65ecaee2726e50fa77f5625fdfb3b5674408b55e259b70c699b5c60c3364602a"
+    },
+    {
+      "path": "ruffle/core.ruffle.a6584f4c154875f3f805.js",
+      "size": 102936,
+      "sha256": "9d5fe05c2b217d1235412e564fc35203028af10afdce76baf98694aa3ebaa18d"
+    },
+    {
+      "path": "ruffle/core.ruffle.f8e79026a9aea0a4e05d.js",
+      "size": 110264,
+      "sha256": "cbe7e17a427f30514695fd468b73184e7c8c19e64259df3c928cd3866e549513"
+    },
+    {
+      "path": "ruffle/ecc5e233d534bdc785c1.wasm",
+      "size": 12974369,
+      "sha256": "ef444093d654d9e7ba3090586caba5570ddb5cff6ea0f02ec048a0dc05d7d59f"
+    },
+    {
+      "path": "ruffle/ruffle.js",
+      "size": 457962,
+      "sha256": "07a3382ad050b71dc8736e3f824a7d086ae4be2dbabd9aaf8a528819fc9b9515"
+    }
+  ]
+}
