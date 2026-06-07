@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "order": 1,
+      "iconUrl": "https://github.com/youzii-hash/xcgjxd/blob/main/tools%20img/%E9%87%8D%E8%81%9A.png",
+      "title": "重聚巅峰",
+      "description": "赛尔号最火的脱机巅峰工具，搭配寒雪飞舞巅峰脚本使用更佳~",
+      "url": "https://wwu.lanzouu.com/s/cjdf"
+    },
+    {
+      "order": 2,
+      "iconUrl": "https://github.com/youzii-hash/xcgjxd/blob/main/tools%20img/XM.png",
+      "title": "xm脱机日常",
+      "description": "超好用的一键日常工具，周活动每周都会更新",
+      "url": "https://wwu.lanzouu.com/s/cjdf"
+    },
+    {
+      "order": 3,
+      "iconUrl": "https://github.com/youzii-hash/xcgjxd/blob/main/tools%20img/%E9%9B%B7%E5%B0%8F%E4%BC%8A.png",
+      "title": "雷小伊脱机日常",
+      "description": "支持自定义脚本，社区资源丰富的一键日常工具",
+      "url": "https://lxy.lanzouj.com/b052mtlbg"
+    }
+  ]
+}
