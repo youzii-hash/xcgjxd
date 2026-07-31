@@ -1,0 +1,22 @@
+{
+  "schema": "xiaocang.update_versions",
+  "version": 1,
+  "items": [
+    {
+      "version": "1.0.1",
+      "title": "有新版本啦~",
+      "content": "1：优化了一些卡顿问题\n2：精简安装包体积\n[分割线]欢迎加入官群聊天：123456789",
+      "type": "非强制",
+      "internalUrl": "https://github.com/youzii-hash/xcgjxd/blob/main/tools%20img/MW%E6%89%8B%E5%86%8C.apk",
+      "externalUrl": "https://github.com/youzii-hash/xcgjxd/blob/main/tools%20img/MW%E6%89%8B%E5%86%8C.apk"
+    },
+    {
+      "version": "1.0.0",
+      "title": "测试",
+      "content": "测试",
+      "type": "测试",
+      "internalUrl": "测试",
+      "externalUrl": "测试"
+    }
+  ]
+}
