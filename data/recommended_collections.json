@@ -1,0 +1,48 @@
+{
+  "schema": "xiaocang.recommended_collections",
+  "version": 1,
+  "items": [
+    {
+      "id": 1,
+      "title": "狂野最强阵容",
+      "description": "最强的12只怪物！",
+      "petIds": [
+        3524,
+        4712,
+        4186,
+        4618,
+        3056,
+        4732,
+        5000,
+        3577,
+        3550,
+        4766,
+        4125,
+        3291
+      ]
+    },
+    {
+      "id": 2,
+      "title": "最贵的背包",
+      "description": "6只无限自由",
+      "petIds": [
+        3383,
+        3383,
+        3383,
+        3383,
+        3383,
+        3383
+      ]
+    },
+    {
+      "id": 3,
+      "title": "PVE神宠",
+      "description": "常用的PVE精灵",
+      "petIds": [
+        3512,
+        3329,
+        3463
+      ]
+    }
+  ]
+}
